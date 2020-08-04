@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to vbt
+          Welcome to voksne barn Trondheim
         </h1>
 
         <div className={styles.grid}>

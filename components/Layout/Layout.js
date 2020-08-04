@@ -14,7 +14,6 @@ const Layout = ({ children, title, description, backButton }) => (
         </Head>
         <div className="container">
             <nav>
-                {backButton && <span className="back-button" onClick={() => Router.back()}>&#x2b05;</span> }
                 <Link activeClassName="active" href="/">
                     <a>
                         <span className={Classes.Link}>Home</span>
@@ -74,19 +73,8 @@ const Layout = ({ children, title, description, backButton }) => (
                 /*font-weight: bold;*/
             }
 
-            nav .back-button {
-                font-size: 0.9rem;
-                padding-right: 1em;
-                cursor: pointer;
-            }
         `}</style>
-        <style global jsx>{`
-            body {
-                background: white;
-                font-family: Verdana, Geneva, sans-serif;
-            }
 
-        `}</style>
     </div>
 
 );
