@@ -1,0 +1,10 @@
+.Events {
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+
+.Event {
+    border-bottom: 1px solid grey;
+    background: #f6f6ef;
+}
