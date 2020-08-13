@@ -1,4 +1,5 @@
 import Layout from '../components/Layout/Layout';
+import ListItem from '../components/ListItem/ListItem';
 
 import classes from '../styles/Events.module.css';
 
@@ -13,27 +14,20 @@ const eventsArray = [
     }
 ];
 
-const eventTags = [];
-let i = 0;
+let nr = 0;
+const listItems = [];
 eventsArray.forEach((event) => {
-     eventTags.push(
-         <div className={classes.Event} key={i+'eventDiv'}>
-             <h3 key={i+'event_title'}>
-                 {event.title}
-             </h3>
-             <p key={i+'event_desc'}>{event.description}</p>
-         </div>
-        );
-
-
-     i++;
+    listItems.push(
+        <ListItem nr={nr} title={event.title} description={event.description} />
+    );
+    nr++;
 });
 
 export default function events() {
     return (
         <Layout title="Events">
             <div className={classes.Events}>
-                {eventTags}
+                {listItems}
             </div>
         </Layout>
     );
