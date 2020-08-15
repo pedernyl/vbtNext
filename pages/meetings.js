@@ -12,7 +12,7 @@ export default function announcements() {
                 <br />
                 <div className={classes.MeetingNote}>
                     <p className="meetingTime">
-                    We have meetings every sunday at 16.30.
+                    We have meetings every sunday at 17.30.
                     You can find us at
                     </p>
                     <VbtMap />
