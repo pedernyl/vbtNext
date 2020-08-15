@@ -18,7 +18,7 @@ let nr = 0;
 const listItems = [];
 announcementsArray.forEach((event) => {
     listItems.push(
-        <ListItem nr={nr} title={event.title} description={event.description} />
+        <ListItem key={nr+'announcement'} nr={nr} title={event.title} description={event.description} />
     );
     nr++;
 });

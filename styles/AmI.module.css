@@ -1,0 +1,13 @@
+.AmIboard {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    float: left;
+
+}
+
+.AmINote {
+    margin-top: 5px;
+    border: 1px solid #FF2200;;
+    background: #f0FF00;
+    padding: 3px;
+}

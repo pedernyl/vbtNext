@@ -31,8 +31,8 @@ export default function Home() {
           </a>
 
           <a className={styles.card} id="adultchildren" onClick={(event) => onClickHandler(event)}>
-            <h3>Am I and adult children? &rarr;</h3>
-            <p>Discover if you are an adult children like us</p>
+            <h3>Am I an adult children? &rarr;</h3>
+            <p>Are you one of us?</p>
           </a>
 
           <a className={styles.card} id="events" onClick={(event) => onClickHandler(event)}>
