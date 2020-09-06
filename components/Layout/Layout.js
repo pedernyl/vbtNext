@@ -3,16 +3,57 @@ import Head from 'next/head';
 import Router from 'next/router';
 
 import Classes from './Layout.module.css';
+import HamMenu from "../HamMenu/HamMenu";
 
 
-const Layout = ({ children, title, description, backButton }) => (
+const Layout = ({ children, title, description, backButton }) => {
 
-    <div>
+    const colors = {
+        navBg: '#f0FF00',
+        borderColor: '#FF2200',
+        textColor: '#333'
+    }
+
+    const settings = {
+        links: [
+            {
+                name: 'Home',
+                href: '/'
+            },
+            {
+                name: 'Meetings',
+                href: '/meetings'
+            },
+            {
+                name: 'Am I An Adult Children?',
+                href: '/adultchildren'
+            },
+            {
+                name: 'Events',
+                href: '/events'
+            },
+            {
+                name: 'Announcements',
+                href: '/announcements'
+            }
+        ],
+
+        colors: {
+            navBg: '#f0FF00',
+            borderColor: '#FF2200',
+            textColor: '#333'
+        }
+    };
+
+
+    return (
+        <div>
         <Head>
             <title>{title}</title>
-            <meta name="description" content={description} />
+            <meta name="description" content={description}/>
         </Head>
-        <div className="container">
+            <HamMenu settings={settings} />
+            {/*<div className="container">
             <nav>
                 <Link activeClassName="active" href="/">
                     <a>
@@ -33,7 +74,8 @@ const Layout = ({ children, title, description, backButton }) => (
                     <a className={Classes.Link}>Announcements</a>
                 </Link>
             </nav>
-
+            */}
+        <div>
             {children}
         </div>
 
@@ -76,8 +118,8 @@ const Layout = ({ children, title, description, backButton }) => (
         `}</style>
 
     </div>
-
-);
+    );
+}
 
 
 export default Layout;

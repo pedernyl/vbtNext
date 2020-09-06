@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# HamMenu
+/components/HamMenu
+
 # production
 /build
 
