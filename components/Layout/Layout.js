@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 
 import Classes from './Layout.module.css';
-import HamMenu from "../HamMenu/HamMenu";
+import HamMenu from "./../HamMenu/HamMenu";
 
 
 const Layout = ({ children, title, description, backButton }) => {
