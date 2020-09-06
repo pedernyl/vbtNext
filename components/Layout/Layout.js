@@ -39,9 +39,9 @@ const Layout = ({ children, title, description, backButton }) => {
         ],
 
         colors: {
-            navBg: '#f0FF00',
-            borderColor: '#FF2200',
-            textColor: '#333'
+            navBg: '#FF2200',
+            borderColor: '#f0FF00',
+            textColor: '#f0FF00'
         }
     };
 
