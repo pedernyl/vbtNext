@@ -21,7 +21,7 @@ import styles from './styles.module.css';
 
  */
 
-export default function Completely({ settings })  {
+export default function HamMenu({ settings })  {
 
     const [isMenuOpen, setMenuToggled] = useState(false);
     const toggleTrueFalse = () => setMenuToggled(!isMenuOpen);
