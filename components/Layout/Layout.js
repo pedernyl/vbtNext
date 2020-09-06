@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 
 import Classes from './Layout.module.css';
-import HamMenu from "./../HamMenu/HamMenu";
+import HamMenuNext from "../HamMenu/HamMenuNext";
 
 
 const Layout = ({ children, title, description, backButton }) => {
@@ -52,7 +52,7 @@ const Layout = ({ children, title, description, backButton }) => {
             <title>{title}</title>
             <meta name="description" content={description}/>
         </Head>
-            <HamMenu settings={settings} />
+            <HamMenuNext settings={settings} />
             {/*<div className="container">
             <nav>
                 <Link activeClassName="active" href="/">
