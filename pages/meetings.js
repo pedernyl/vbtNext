@@ -12,7 +12,8 @@ export default function announcements() {
                 <br />
                 <div className={classes.MeetingNote}>
                     <p className="meetingTime">
-                    We have meetings every sunday at 17.30.
+                        <strong>Only online meeting rest of 2020</strong>
+                         <br />We have meetings every sunday at 17.30.
                     You can find us at
                     </p>
                     <VbtMap />
